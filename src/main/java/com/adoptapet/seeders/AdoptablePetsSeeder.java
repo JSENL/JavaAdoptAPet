@@ -1,21 +1,19 @@
 package com.adoptapet.seeders;
 
 import com.adoptapet.models.AdoptablePet;
-import com.adoptapet.models.Pet;
+import com.adoptapet.models.PetType;
 import com.adoptapet.repositories.AdoptablePetRepository;
-import com.adoptapet.repositories.PetsRepository;
-import com.adoptapet.models.*;
-import com.adoptapet.repositories.*;
+import com.adoptapet.repositories.PetTypesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AdoptablePetsSeeder {
   private final AdoptablePetRepository adoptablePetRepo;
-  private final PetsRepository petsRepo;
+  private final PetTypesRepository petsRepo;
 
   @Autowired
-  public AdoptablePetsSeeder(AdoptablePetRepository adoptablePetRepo, PetsRepository petsRepo) {
+  public AdoptablePetsSeeder(AdoptablePetRepository adoptablePetRepo, PetTypesRepository petsRepo) {
     this.adoptablePetRepo = adoptablePetRepo;
     this.petsRepo = petsRepo;
   }
@@ -29,7 +27,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("Is a sweet guineapig that loves belly rubs.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).get());
+      adoptablePet.setPetType(petsRepo.findById(1).get());
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -39,7 +37,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Is a chameleon that gets excited at the sight of lettuce.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -49,7 +47,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Is a ornery guineapig that hates belly rubs.");
       adoptablePet.setAdoptionStatus("'Pending'");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -59,7 +57,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("Is a snake with a huge appetite for bunnies.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -69,7 +67,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("This guy loves crickets");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -79,7 +77,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("This guy loves to lounge around");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -89,7 +87,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("Great lizard just looking to play.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -99,7 +97,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("He will chew everything, right into your heart.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -109,7 +107,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Baby Shark doo doo doo doo dooo, also likes lettuce.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -119,7 +117,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(true);
       adoptablePet.setAdoptionStory("Will do what he needs to do to change. Just for you.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -129,7 +127,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Loves mice! Not for friends or play play though.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -139,7 +137,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("You will see her in your dreams.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -149,7 +147,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Ready or not here I come. Oh there you are hiding!! Likes to existentially think of life.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -159,7 +157,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Loves carrots and will love you too.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -169,7 +167,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("She got him swerving and breaking the law These windows tinted so nobody saw.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(1).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(1).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
 
       adoptablePet = new AdoptablePet();
@@ -179,7 +177,7 @@ public class AdoptablePetsSeeder {
       adoptablePet.setVaccinationStatus(false);
       adoptablePet.setAdoptionStory("Love lettuce, walking, and beating up the man you jive turkey.");
       adoptablePet.setAdoptionStatus("Pending");
-      adoptablePet.setPet(petsRepo.findById(2).orElse(new Pet()));
+      adoptablePet.setPetType(petsRepo.findById(2).orElse(new PetType()));
       adoptablePetRepo.save(adoptablePet);
     }
   }

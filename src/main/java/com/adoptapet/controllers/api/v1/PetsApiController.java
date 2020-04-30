@@ -1,9 +1,9 @@
 package com.adoptapet.controllers.api.v1;
 
 
-import com.adoptapet.models.Pet;
-import com.adoptapet.models.Pet;
-import com.adoptapet.repositories.PetsRepository;
+import com.adoptapet.models.PetType;
+import com.adoptapet.repositories.PetTypesRepository;
+import com.adoptapet.repositories.PetTypesRepository;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,21 +15,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/v1/pets")
 public class PetsApiController {
   @Autowired
-  private PetsRepository petsRepository;
-  @GetMapping("api/v1/pets")
-  public Iterable<Pet> getList(){
-    return petsRepository.findAll();
+  private PetTypesRepository petTypesRepository;
+  @GetMapping
+  public Iterable<PetType> getList(){
+    return petTypesRepository.findAll();
   }
 
-  @GetMapping("api/v1/pets/{id}")
-  public Optional<Pet> getIndividualItem(@PathVariable Integer id){
-    return petsRepository.findById(id);
+  @GetMapping("/{id}")
+  public Optional<PetType> getIndividualItem(@PathVariable Integer id){
+    return petTypesRepository.findById(id);
   }
   @PostMapping
-  public Pet create(@RequestBody Pet pet) {
-    return petsRepository.save(pet);
+  public PetType create(@RequestBody PetType petType) {
+    return petTypesRepository.save(petType);
   }
 }

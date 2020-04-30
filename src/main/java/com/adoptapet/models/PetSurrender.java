@@ -1,5 +1,7 @@
 package com.adoptapet.models;
     import lombok.Data;
+    import lombok.Getter;
+    import lombok.Setter;
     import org.hibernate.validator.constraints.URL;
 
     import javax.persistence.*;
@@ -11,6 +13,8 @@ package com.adoptapet.models;
 @Data
 @Entity
 @Table(name = "pet_surrender_applications")
+@Getter
+@Setter
 public class PetSurrender {
   @Id
   @SequenceGenerator(name = "pet_surrender_applications_generator", sequenceName = "pet_surrender_applications_id_seq", allocationSize = 1)
@@ -41,7 +45,7 @@ public class PetSurrender {
 
   @ManyToOne
   @JoinColumn(name = "pet_type_id", nullable = false)
-  private Pet pet;
+  private PetType petType;
 
   @URL
   @Column(name = "pet_img_url")

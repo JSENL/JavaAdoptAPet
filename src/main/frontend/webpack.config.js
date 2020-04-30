@@ -1,32 +1,35 @@
-let WriteFilePlugin = require("write-file-webpack-plugin")
+let WriteFilePlugin = require('write-file-webpack-plugin');
 
-var webpack = require("webpack")
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
 	entry: {
-		path: "./app/main.js",
+		path: './app/main.js'
 	},
 	output: {
-		path: __dirname + "/public",
-		filename: "bundle.js",
+		path: path.join(__dirname, '../../../target/classes/static'),
+		filename: "bundle.js"
 	},
 	module: {
 		rules: [
 			{
 				test: /\.scss$/,
-				use: ["style-loader", "css-loader"],
+				use: [
+					"style-loader",
+					"css-loader",
+					"sass-loader"
+				]
 			},
 			{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: "babel-loader",
-			},
-		],
+				loader: 'babel-loader'
+			}
+		]
 	},
-	plugins: [new WriteFilePlugin()],
-	devtool: "eval-source-map",
-	devServer: {
-		contentBase: "./public",
-		inline: true,
-	},
+	plugins: [
+		new WriteFilePlugin()
+	],
+	devtool: 'eval-source-map'
 }

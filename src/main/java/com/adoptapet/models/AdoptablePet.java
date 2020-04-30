@@ -1,6 +1,8 @@
 package com.adoptapet.models;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.validator.constraints.URL;
 
 import javax.persistence.*;
@@ -10,6 +12,8 @@ import javax.validation.constraints.NotNull;
 @Data
 @Entity
 @Table(name = "adoptable_pets")
+@Getter
+@Setter
 public class AdoptablePet {
   @Id
   @SequenceGenerator(name = "adoptable_pets_generator", sequenceName = "adoptable_pets_id_seq", allocationSize = 1)
@@ -18,7 +22,7 @@ public class AdoptablePet {
   private Integer id;
 
   @NotBlank
-  @Column
+  @Column(name="name")
   private String name;
 
   @URL
@@ -26,7 +30,7 @@ public class AdoptablePet {
   @Column(name = "img_url")
   private String imgUrl;
 
-  @Column
+  @Column(name="age")
   private Integer age;
 
   @Column(name = "vaccination_status")
@@ -42,5 +46,5 @@ public class AdoptablePet {
 
   @ManyToOne
   @JoinColumn(name = "pet_type_id", nullable = false)
-  private Pet pet;
+  private PetType petType;
 }

@@ -3,10 +3,14 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 @Entity
 @Table(name = "admin_table")
+@Getter
+@Setter
 public class Admin {
   @Id
   @SequenceGenerator(name = "admin_table_generator", sequenceName = "admin_table_id_seq", allocationSize = 1)
