@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\target\node\node.exe C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\target\node\yarn\dist\bin\yarn.js
+
+PATH: 
+  C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\target\node;C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\target\node\yarn\dist\bin;C:\Users\Jasenml\.yarn\bin;C:\Users\Jasenml\.config\yarn\global\node_modules\.bin;C:\Users\Jasenml\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Jasenml\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files\PostgreSQL\12\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\PostgreSQL\12\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.6;C:\Program Files\Java\jdk-11.0.6\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-11.0.6\bin;C:\Users\Jasenml\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PostgreSQL\12\bin;C:\Users\Jasenml\AppData\Local\Yarn\bin;C:\Users\Jasenml\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.4\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\Jasenml\bin\win-sudo\s;
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, copyfile 'C:\Users\Jasenml\AppData\Local\Yarn\Cache\v4\npm-readable-stream-3.6.0-337bbda3adc0706bd3e024426a286d4b4b2c9198\node_modules\readable-stream\lib\internal\streams\from.js' -> 'C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\frontend\node_modules\htmlparser2\node_modules\readable-stream\lib\internal\streams\from.js'
+
+npm manifest: 
+  {
+    "name": "java-spring-and-react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.config.js",
+    "scripts": {
+      "dev:client": "node_modules/.bin/webpack-dev-server --host 0.0.0.0",
+      "webpack": "node_modules/.bin/webpack --config ./webpack.config.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "~6.23.1",
+      "babel-loader": "~6.3.2",
+      "babel-preset-env": "~1.6.1",
+      "babel-preset-react": "~6.22.0",
+      "css-loader": "^2.1.1",
+      "enzyme": "~3.10.0",
+      "enzyme-adapter-react-16": "^1.14.0",
+      "jest": "^24.9.0",
+      "jquery": "3.0.0",
+      "json-loader": "^0.5.4",
+      "node-sass": "^4.12.0",
+      "nodemon": "^1.19.0",
+      "phantomjs-prebuilt": "~2.1.14",
+      "sass-loader": "^6.0.2",
+      "style-loader": "^0.13.2",
+      "webpack": "~2.3.1",
+      "webpack-dev-server": "~2.4.2",
+      "write-file-webpack-plugin": "~4.2.0"
+    },
+    "dependencies": {
+      "@babel/polyfill": "^7.4.4",
+      "body-parser": "^1.19.0",
+      "express": "^4.16.4",
+      "express-handlebars": "^3.0.2",
+      "lodash": "^4.17.15",
+      "morgan": "^1.9.1",
+      "pg": "^7.18.2",
+      "react": "~16.8.0",
+      "react-dom": "~16.8.0",
+      "react-router-dom": "^5.0.0",
+      "whatwg-fetch": "1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
