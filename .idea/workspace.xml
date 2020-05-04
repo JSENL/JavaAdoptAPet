@@ -2,34 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8b2701a-8f94-492d-9f7f-7e9d411cd151" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/AdoptedPetListPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/__tests__/AdoptMeForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/AdoptMeForm.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/__tests__/AnimalInfo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/AnimalInfo.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/__tests__/ListPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/ListPage.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/__tests__/SurrenderForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/SurrenderForm.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/__tests__/TypeOfPet.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/TypeOfPet.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/AdoptMeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/AdoptMeForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/AnimalInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/AnimalInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/ErrorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/ErrorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/ListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/ListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/ListPageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/ListPageContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/Orbit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/Orbit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/PendingAppContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/PendingAppList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/PendingSurrenderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/PendingSurrenderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/ShowPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/ShowPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/SurrenderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/SurrenderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/TypeOfPet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/TypeOfPet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/components/TypeOfPetsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/TypeOfPetsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/adoptapet/controllers/PetsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/adoptapet/controllers/PetsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/adoptapet/models/AdoptablePet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/adoptapet/models/AdoptablePet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/adoptapet/seeders/AdoptablePetsSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/adoptapet/seeders/AdoptablePetsSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/adoptapet/seeders/PetTypeSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/adoptapet/seeders/PetTypeSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/pets/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/AnimalInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/ListPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/ListPageContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingAppList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/PendingSurrenderList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/ShowPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/app/components/SurrenderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/frontend/app/components/SurrenderForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/test/__tests__/AnimalInfo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/test/__tests__/AnimalInfo.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +49,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1b9LzmzoZ0m538D1YLN3qaDUyhv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -93,11 +82,11 @@
       <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\resources" />
       <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\frontend" />
       <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\frontend\app" />
       <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\test" />
       <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src" />
-      <recent name="C:\Users\Jasenml\challenges\adopt_a_pet\week-17\adopt_a_pet\src\main\resources\templates\" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,7 +126,7 @@
       <workItem from="1588341885655" duration="1683000" />
       <workItem from="1588344016043" duration="324000" />
       <workItem from="1588352546188" duration="7240000" />
-      <workItem from="1588565430422" duration="746000" />
+      <workItem from="1588565430422" duration="2352000" />
     </task>
     <servers />
   </component>
@@ -153,10 +142,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="90" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1588264975027" />
-    <state x="528" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588265090680">
+    <state x="528" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588567316257">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="528" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1588265090680" />
+    <state x="528" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1588567316257" />
     <state x="605" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1588342463284">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -173,10 +162,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="601" y="320" width="398" height="226" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1588217794554" />
-    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588090505891">
+    <state x="348" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588567778974">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1588090505891" />
+    <state x="348" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1588567778974" />
     <state x="580" y="125" key="FileChooserDialogImpl" timestamp="1588565499184">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

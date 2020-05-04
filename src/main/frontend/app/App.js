@@ -41,20 +41,23 @@ const App = props => {
       </div>
       <div className="bottom">
         <Switch>
-          <Route exact path="/pets" component={TypeOfPetsContainer} />
-          <Route exact path="/guineapigs" key={"gp"}>
-            <ListPageContainer
+      <Redirect exact path="/" to="/pets" />
+         <Route exact path="/pets" component={TypeOfPetsContainer} />
+          <Route exact path="/pets/guineapigs" key={"gp"}>
+            <PetListContainer
               petType={"guinea pig"}
               petTypeName={"Guinea Pigs"}
             />
           </Route>
-          <Route exact path="/reptiles" key={"lz"}>
-            <ListPageContainer petType={"reptile"} petTypeName={"Reptiles"} />
+          <Route exact path="/pets/reptiles" key={"lz"}>
+            <PetListContainer petType={"reptile"} petTypeName={"Reptiles"} />
           </Route>
           <Route exact path="/adoptions/new" component={SurrenderForm} />
           <Route exact path="/login" component={LoginPage} />
-          <Route exact path="/pets/:id" component={ShowPage} />
-        </Switch>
+          <Route exact path="/pets/:petType/:id" component={PetShowContainer} />
+    <Route exact path="/pending_applications" component={EditApplicationContainer} />
+  <Route exact path="/adopted" component={AdoptedPetContainer} />
+  </Switch>
       </div>
     </BrowserRouter>
   )

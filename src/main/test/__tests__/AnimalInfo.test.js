@@ -4,7 +4,7 @@ import Enzyme, { mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 Enzyme.configure({ adapter: new Adapter() })
 
-import AnimalInfo from "../../frontend/app/components/AnimalInfo"
+import AnimalInfo from "../../frontend/app/components/AdoptedPetListPage"
 
 describe("animal info component", () => {
   let wrapper
