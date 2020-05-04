@@ -4,7 +4,7 @@ import Enzyme, { mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 Enzyme.configure({ adapter: new Adapter() })
 
-import AdoptMeForm from "../components/AdoptMeForm"
+import AdoptMeForm from "../../frontend/app/components/AdoptMeForm"
 
 describe("adopt me form", () => {
   let wrapper

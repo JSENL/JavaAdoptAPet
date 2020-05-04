@@ -4,7 +4,7 @@ import Enzyme, { mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 Enzyme.configure({ adapter: new Adapter() })
 
-import ListPage from "../components/ListPage"
+import ListPage from "../../frontend/app/components/ListPage"
 
 describe("list page component", () => {
   let wrapper

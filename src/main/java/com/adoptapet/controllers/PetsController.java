@@ -17,15 +17,15 @@ public class PetsController {
 
   @GetMapping
   public String getAll(Model model) {
-//    model.addAttribute("pets", petTypesRepository.findAll());
+    model.addAttribute("pets", petTypesRepository.findAll());
     model.addAttribute("pets", new ArrayList<PetType>());
     return "static/index";
   }
 
-
   @GetMapping("/new")
   public String getNew(Model model) {
-//    model.addAttribute("pet", petType);
+    PetType petType = new PetType();
+    model.addAttribute("pet", petType);
     return "pets/new";
   }
 }

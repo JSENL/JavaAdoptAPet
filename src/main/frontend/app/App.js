@@ -1,10 +1,10 @@
 import React from "react"
 import { Route, BrowserRouter, Link, Switch } from "react-router-dom"
-import SurrenderForm from "./SurrenderForm"
-import TypeOfPetsContainer from "./TypeOfPetsContainer"
-import LoginPage from "./LoginPage"
-import ListPageContainer from "./ListPageContainer"
-import ShowPage from "./ShowPage"
+import SurrenderForm from "./components/SurrenderForm"
+import TypeOfPetsContainer from "./components/TypeOfPetsContainer"
+import LoginPage from "./components/LoginPage"
+import ListPageContainer from "./components/ListPageContainer"
+import ShowPage from "./components/ShowPage"
 
 const App = props => {
   return (

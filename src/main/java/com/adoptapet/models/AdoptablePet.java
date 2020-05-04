@@ -1,7 +1,7 @@
 package com.adoptapet.models;
 
-import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.validator.constraints.URL;
 
@@ -9,7 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-@Data
+@NoArgsConstructor
 @Entity
 @Table(name = "adoptable_pets")
 @Getter

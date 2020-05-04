@@ -4,7 +4,7 @@ import Enzyme, { mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 Enzyme.configure({ adapter: new Adapter() })
 
-import TypeOfPet from "../components/TypeOfPet"
+import TypeOfPet from "../../frontend/app/components/TypeOfPet"
 
 describe("type of pet component", () => {
   let wrapper
